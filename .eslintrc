@@ -1,3 +1,18 @@
 {
-    "extends": ["eslint:recommended", "airbnb"]
+    "extends": [
+        "eslint:recommended",
+        "airbnb"
+    ],
+    "rules": {
+        "indent": [
+            "error",
+            4
+        ],
+        "import/no-extraneous-dependencies": [
+            "error",
+            {
+                "devDependencies": true
+            }
+        ]
+    }
 }
