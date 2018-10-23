@@ -3,6 +3,6 @@ FROM node:8-alpine
 WORKDIR /usr/app/
 
 COPY package*.json ./
-RUN npm install
+RUN yarn install
 
-CMD ["./node_modules/nodemon/bin/nodemon.js", "index.js"]
+CMD ["./node_modules/nodemon/bin/nodemon.js", "--inspect=0.0.0.0:9229", "index.js"]
